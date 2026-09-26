@@ -27,11 +27,13 @@
       --spacing: 10px;
       --blur: 10px;
     }
+    
     img{
       padding: var(--spacing);
       background: var(--base);
       filter: blur(var(--blur));
     }
+
     h1{
       color: var(--base)
     }
@@ -68,6 +70,7 @@
 
     input.forEach(input => input.addEventListener('change', handleChange));
     input.forEach(input => input.addEventListener('mousemove', handleChange));
+
   </script>
 
 </body>
