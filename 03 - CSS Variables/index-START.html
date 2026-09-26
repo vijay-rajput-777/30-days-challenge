@@ -27,7 +27,7 @@
       --spacing: 10px;
       --blur: 10px;
     }
-    
+
     img{
       padding: var(--spacing);
       background: var(--base);
@@ -64,8 +64,10 @@
     const input = document.querySelectorAll('.controls input');
 
     function handleChange(){
+
       const abc = this.dataset.sizing || '';
       document.documentElement.style.setProperty(`--${this.name}`, this.value + abc);
+      
     }
 
     input.forEach(input => input.addEventListener('change', handleChange));
